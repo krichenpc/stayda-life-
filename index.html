@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stayda Life — الملعب القابسي</title>
+  <meta name="description" content="Stayda Life — موقع رسمي: أخبار، أعضاء، اتصال." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#accueil">
+      <img src="logo.png" alt="شعار Stayda Life" class="brand-logo" />
+      <span class="brand-name">Stayda Life</span>
+    </a>
+
+    <button class="burger" aria-label="القائمة" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav">
+      <a href="#accueil">الرئيسية</a>
+      <a href="#apropos">من نحن</a>
+      <a href="#activites">الأنشطة</a>
+      <a href="#galerie">الصور</a>
+      <a href="#contact">اتصل بنا</a>
+    </nav>
+  </header>
+
+  <section id="accueil" class="hero">
+    <img src="logo.png" alt="" class="hero-logo" />
+    <h1>Stayda Life</h1>
+    <p class="tagline">روح الفريق، من 1957</p>
+    <a class="btn" href="#contact">انضم إلينا</a>
+  </section>
+
+  <section id="apropos" class="section">
+    <h2>من نحن</h2>
+    <p>
+      Stayda Life جمعية رياضية تأسست سنة 1957. نعمل على تنمية المواهب الشابة،
+      ونشر روح الفريق والانتماء، وتنظيم الأنشطة الرياضية والثقافية لأعضائنا.
+    </p>
+    <ul class="stats">
+      <li><strong>1957</strong><span>سنة التأسيس</span></li>
+      <li><strong>+300</strong><span>عضو</span></li>
+      <li><strong>5</strong><span>فرق</span></li>
+    </ul>
+  </section>
+
+  <section id="activites" class="section alt">
+    <h2>الأنشطة</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>التدريبات</h3>
+        <p>حصص أسبوعية لكل الفئات العمرية بإشراف مدربين مختصين.</p>
+      </article>
+      <article class="card">
+        <h3>المقابلات</h3>
+        <p>مشاركة في البطولات الجهوية والوطنية طوال الموسم.</p>
+      </article>
+      <article class="card">
+        <h3>الأنشطة الثقافية</h3>
+        <p>رحلات، حملات تطوعية، وورشات للأعضاء الصغار.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="galerie" class="section">
+    <h2>الصور</h2>
+    <div class="gallery">
+      <img src="logo.png" alt="صورة 1" />
+      <img src="logo.png" alt="صورة 2" />
+      <img src="logo.png" alt="صورة 3" />
+      <img src="logo.png" alt="صورة 4" />
+    </div>
+    <p class="hint">عوّض الصور بصور حقيقية من الأنشطة.</p>
+  </section>
+
+  <section id="contact" class="section alt">
+    <h2>اتصل بنا</h2>
+    <form id="contactForm" class="contact-form" novalidate>
+      <label>
+        الاسم
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        البريد الإلكتروني
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        الرسالة
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button class="btn" type="submit">إرسال</button>
+      <p class="form-msg" role="status"></p>
+    </form>
+
+    <ul class="contact-info">
+      <li>📞 <a href="tel:+21600000000">+216 00 000 000</a></li>
+      <li>✉️ <a href="mailto:contact@staydalife.tn">contact@staydalife.tn</a></li>
+      <li>📍 قابس، تونس</li>
+    </ul>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Stayda Life — جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
